@@ -1,7 +1,7 @@
-import React from 'react';
-import Review from './Review';
+import React, { useState } from 'react'
+import Review from './Review'
 function App() {
-  return <h2>reviews project setup</h2>;
+  return <h1>ish</h1>
 }
 
-export default App;
+export default App
