@@ -14,6 +14,10 @@ function App() {
     setTours(newTours)
   }
 
+  const removeSingleTour = () => {
+    const newTours = tours.filter((tour) => tour.id !== 'recIwxrvU9HfJR3B4')
+    setTours(newTours)
+  }
   const fetchTours = async () => {
     setLoading(true)
     try {
@@ -50,6 +54,7 @@ function App() {
   }
   return (
     <main>
+      <button onClick={removeSingleTour}>click me</button>
       <Tours tours={tours} removeTour={removeTour} />
     </main>
   )
